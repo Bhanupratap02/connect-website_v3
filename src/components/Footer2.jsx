@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 const Footer2 = ({ className = "" }) => {
   return (
     <section
-      className={`self-stretch bg-white overflow-hidden flex flex-row items-start justify-start pt-9 px-[179px] pb-[72px] box-border gap-[203px] max-w-full text-left text-10xl text-darkslategray-200 font-poppins mq450:gap-[25px] mq750:gap-[51px] mq750:pt-[23px] mq750:pb-[47px] mq750:box-border mq1050:flex-wrap mq1050:gap-[101px] mq1050:justify-center mq1050:pl-[39px] mq1050:pr-[39px] mq1050:box-border ${className}`}
+      className={`self-stretch bg-white overflow-hidden flex flex-row items-start justify-start pt-9 px-[169px] pb-[72px] box-border gap-[203px] max-w-full text-left text-10xl text-darkslategray-200 font-poppins mq450:gap-[25px] mq750:gap-[51px] mq750:pt-[23px] mq750:pb-[47px] mq750:box-border mq1050:flex-wrap mq1050:gap-[101px] mq1050:justify-center mq1050:pl-[39px] mq1050:pr-[39px] mq1050:box-border ${className}`}
     >
       <div className="w-[839px] flex flex-col items-start justify-start gap-[40px] max-w-full mq450:gap-[20px]">
         <div className="w-[671px] flex flex-col items-start justify-start gap-[25px] max-w-full">
-          <div className="flex flex-row items-start justify-start gap-[20px] max-w-full mq750:flex-wrap mq450:flex-col mq450:items-center mq450:justify-center mq450:gap-2 ">
+          <div className="flex flex-row items-start justify-start gap-[20px] max-w-full mq750:flex-wrap mq450:flex-col mq450:items-center mq450:justify-center mq450:gap-2  mq750:hidden">
             <a
               href="https://apps.apple.com/app/connect-plus/id6504287764"
               target="_blank"
@@ -118,9 +118,15 @@ const Footer2 = ({ className = "" }) => {
                       <div className="self-stretch h-[17px] relative leading-[65px] inline-block mq450:text-lg mq450:leading-[22px]">
                         Our Story
                       </div>
-                      <div className="h-[17px] relative leading-[65px] inline-block mq450:text-lg mq450:leading-[22px]">
-                        Contact Us
-                      </div>
+                      <Link
+                        to="/contact-us"
+                        className="text-inherit no-underline"
+                      >
+                        <div className="h-[17px] relative leading-[65px] inline-block mq450:text-lg mq450:leading-[22px]">
+                          Contact Us
+                        </div>
+                      </Link>
+
                       <div className="self-stretch h-[17px] relative leading-[65px] inline-block whitespace-nowrap mq450:text-lg mq450:leading-[22px]">
                         Sign Up
                       </div>

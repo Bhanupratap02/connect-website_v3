@@ -8,14 +8,39 @@ const Contact = ({ className = "" }) => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      const mailtoLink = `mailto:Contact@connectplus.org.uk?subject=Message from ${name}&body=${message} (from ${email})`;
-      setName("");
-      setEmail("");
-      setMessage("");
-      window.location.href = mailtoLink;
-    };
+    // const handleSubmit = (e) => {
+    //   e.preventDefault();
+    //   const mailtoLink = `mailto:Contact@connectplus.org.uk?subject=Message from ${name}&body=${message} (from ${email})`;
+    //   setName("");
+    //   setEmail("");
+    //   setMessage("");
+    //   window.location.href = mailtoLink;
+    // };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const subject = `Message from ${name}`;
+    const body = `${message} (from ${email})`;
+    const mailtoLink = `mailto:Contact@connectplus.org.uk?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+  // Contact@connectplus.org.uk
+    // Create a temporary link element
+    const tempLink = document.createElement("a");
+    tempLink.href = mailtoLink;
+
+    // Append the link to the body and click it programmatically
+    document.body.appendChild(tempLink);
+    tempLink.click();
+
+    // Remove the temporary link from the document
+    document.body.removeChild(tempLink);
+
+    // Clear the form fields
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
   return (
     <section
       ref={contactRef}
@@ -50,7 +75,7 @@ const Contact = ({ className = "" }) => {
                 <input
                   className="w-full [border:none] [outline:none] font-poppins text-xl bg-[transparent] h-[30px] relative tracking-[0.08em] text-darkgray-100 text-left inline-block p-0 z-[1] mq450:text-[16px]"
                   placeholder="Enter your email address"
-                  type="text"
+                  type="email"
                   onChange={(e) => setEmail(e.target.value)}
                   value={email}
                   required

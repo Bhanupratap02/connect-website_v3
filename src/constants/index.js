@@ -4,6 +4,10 @@ export const navLinks = [
     title: "Home",
   },
   {
+    id: "/blogs",
+    title: "Blogs",
+  },
+  {
     id: "/about-us",
     title: "About Us",
   },
@@ -11,10 +15,10 @@ export const navLinks = [
     id: "/services",
     title: "Services",
   },
-//   {
-//     id: "footer",
-//     title: "Quick Links",
-//   },
+  //   {
+  //     id: "footer",
+  //     title: "Quick Links",
+  //   },
   {
     id: "/contact-us",
     // id:"#",

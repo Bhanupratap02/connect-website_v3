@@ -1,7 +1,80 @@
-import { Bike, CarRental, Ride, Taxi3 } from "../assets";
-import PropTypes from "prop-types";
+/** @format */
 
+import { useEffect, useState } from "react";
+import { AppStore, Bike, CarRental, PlayStore, Ride, Taxi3 } from "../assets";
+import PropTypes from "prop-types";
+import QRCodeModal from "./QRCodeModal";
 const ServicesMain = ({ className = "" }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [qrCodeValue, setQrCodeValue] = useState("");
+  const [isIOS, setIsIOS] = useState(false);
+  const [isAndroid, setIsAndroid] = useState(false);
+  useEffect(() => {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    setIsIOS(/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream);
+    setIsAndroid(/android/i.test(userAgent));
+  }, []);
+  const handleButtonClick = () => {
+    // const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    // if (/android/i.test(userAgent)) {
+    //   setQrCodeValue(
+    //     "https://play.google.com/store/apps/details?id=com.connect.driverapp"
+    //   );
+    // } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    //   setQrCodeValue("https://apps.apple.com/app/connect-plus/id6504287764");
+    // } else {
+    //   setQrCodeValue(
+    //     "https://play.google.com/store/apps/details?id=com.connect.driverapp"
+    //   ); 
+    // }
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+  const Button = () => (
+    <>
+      {isIOS ? (
+        <a
+          href="https://apps.apple.com/app/connect-plus/id6504287764"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="self-stretch w-52 relative object-contain min-h-[80px] mq450:w-[90%] mq450:object-contain mq450:h-[30px]"
+            loading="lazy"
+            alt="Download on the App Store"
+            src={AppStore}
+          />
+        </a>
+      ) : isAndroid ? (
+        <a
+          href="https://play.google.com/store/apps/details?id=com.connect.driverapp"
+          className="mr-4"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="self-stretch w-[235px] relative object-contain min-h-[80px] mq450:w-[80%] mq450:object-contain mq450:h-[40px] mq450:pl-[20px]"
+            loading="lazy"
+            alt="Get it on Google Play"
+            src={PlayStore}
+          />
+        </a>
+      ) : (
+        <button
+          onClick={handleButtonClick}
+          className="cursor-pointer py-[15px] pr-[33px] pl-[34px] bg-gainsboro-200 rounded-xl overflow-hidden flex flex-row items-start justify-start whitespace-nowrap border-[1px] border-solid border-white hover:bg-silver hover:box-border hover:border-[1px] hover:border-solid hover:border-gainsboro-100"
+        >
+          <b className="relative text-3xl leading-[16px] inline-block font-poppins text-limegreen text-center min-w-[111px]">
+            Book Now
+          </b>
+        </button>
+      )}
+    </>
+  );
+
   return (
     <section
       className={`self-stretch flex flex-row items-start justify-center py-0 px-5 box-border max-w-full text-left text-16xl text-green font-poppins ${className}`}
@@ -32,11 +105,7 @@ const ServicesMain = ({ className = "" }) => {
                   getaway, a business trip, or a family vacation, we have the
                   right vehicle to suit your needs.
                 </div>
-                <button className="cursor-pointer py-[15px] pr-[33px] pl-[34px] bg-gainsboro-200 rounded-xl overflow-hidden flex flex-row items-start justify-start whitespace-nowrap border-[1px] border-solid border-white hover:bg-silver hover:box-border hover:border-[1px] hover:border-solid hover:border-gainsboro-100">
-                  <b className="relative text-3xl leading-[16px] inline-block font-poppins text-limegreen text-center min-w-[111px]">
-                    Book Now
-                  </b>
-                </button>
+                <Button />
               </div>
             </div>
             <img
@@ -68,11 +137,7 @@ const ServicesMain = ({ className = "" }) => {
                   airport, or enjoying a night out, our reliable rides ensure
                   you reach your destination safely and on time.
                 </div>
-                <button className="cursor-pointer py-[15px] pr-[33px] pl-[34px] bg-gainsboro-200 rounded-xl overflow-hidden flex flex-row items-start justify-start whitespace-nowrap border-[1px] border-solid border-white hover:bg-silver hover:box-border hover:border-[1px] hover:border-solid hover:border-gainsboro-100">
-                  <b className="relative text-3xl leading-[16px] inline-block font-poppins text-limegreen text-center min-w-[111px]">
-                    Book Now
-                  </b>
-                </button>
+                <Button />
               </div>
             </div>
           </div>
@@ -92,11 +157,7 @@ const ServicesMain = ({ className = "" }) => {
                   vehicles and professional drivers, we ensure a comfortable and
                   safe ride every time.
                 </div>
-                <button className="cursor-pointer py-[15px] pr-[33px] pl-[34px] bg-gainsboro-200 rounded-xl overflow-hidden flex flex-row items-start justify-start whitespace-nowrap border-[1px] border-solid border-white hover:bg-silver hover:box-border hover:border-[1px] hover:border-solid hover:border-gainsboro-100">
-                  <b className="relative text-3xl leading-[16px] inline-block font-poppins text-limegreen text-center min-w-[111px]">
-                    Book Now
-                  </b>
-                </button>
+                <Button />
               </div>
             </div>
             <img
@@ -128,16 +189,17 @@ const ServicesMain = ({ className = "" }) => {
                   commuting, running errands, or enjoying a leisurely ride, our
                   bikes offer a convenient and eco-friendly way to get around.
                 </div>
-                <button className="cursor-pointer py-[15px] pr-[33px] pl-[34px] bg-gainsboro-200 rounded-xl overflow-hidden flex flex-row items-start justify-start whitespace-nowrap border-[1px] border-solid border-white hover:bg-silver hover:box-border hover:border-[1px] hover:border-solid hover:border-gainsboro-100">
-                  <b className="relative text-3xl leading-[16px] inline-block font-poppins text-limegreen text-center min-w-[111px]">
-                    Book Now
-                  </b>
-                </button>
+                <Button />
               </div>
             </div>
           </div>
         </div>
       </div>
+      <QRCodeModal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        qrCodeValue={"https://app.connectplus.org.uk/test1/redirect.html"}
+      />
     </section>
   );
 };

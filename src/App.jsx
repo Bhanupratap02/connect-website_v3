@@ -8,6 +8,8 @@ import {
   useLocation,
 } from "react-router-dom";
 import HomePg from "./pages/HomePg";
+import BlogsPg from "./pages/BlogsPg";
+import BlogContent from "./pages/BlogContent";
 import Services from "./pages/Services";
 import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
@@ -20,8 +22,10 @@ const App = () => {
    const pathname = location.pathname;
   return (
     <ScrollToTop>
-      <Routes >
+      <Routes>
         <Route path="/" element={<HomePg />} />
+        <Route path="/blogs" element={<BlogsPg />} />
+        <Route path="/blog/:id" element={<BlogContent />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/about-us" element={<AboutUs />} />

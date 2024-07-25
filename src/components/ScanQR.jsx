@@ -1,26 +1,34 @@
 import PropTypes from "prop-types";
-import { ScanQRMobile } from "../assets";
+import { ScanQRMobile,PlayStore,AppStore } from "../assets";
 import QRCodeModal from "./QRCodeModal";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const ScanQR = ({ className = "" }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [qrCodeValue, setQrCodeValue] = useState("");
-      const handleButtonClick = () => {
+    const [isIOS, setIsIOS] = useState(false);
+    const [isAndroid, setIsAndroid] = useState(false);
+      useEffect(() => {
         const userAgent =
           navigator.userAgent || navigator.vendor || window.opera;
-        if (/android/i.test(userAgent)) {
-          setQrCodeValue(
-            "https://play.google.com/store/apps/details?id=com.connect.driverapp"
-          );
-        } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-          setQrCodeValue(
-            "https://apps.apple.com/app/connect-plus/id6504287764"
-          );
-        } else {
-          setQrCodeValue(
-            "https://play.google.com/store/apps/details?id=com.connect.driverapp"
-          ); // Default to Play Store
-        }
+        setIsIOS(/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream);
+        setIsAndroid(/android/i.test(userAgent));
+      }, []);
+      const handleButtonClick = () => {
+        // const userAgent =
+        //   navigator.userAgent || navigator.vendor || window.opera;
+        // if (/android/i.test(userAgent)) {
+        //   setQrCodeValue(
+        //     "https://play.google.com/store/apps/details?id=com.connect.driverapp"
+        //   );
+        // } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        //   setQrCodeValue(
+        //     "https://apps.apple.com/app/connect-plus/id6504287764"
+        //   );
+        // } else {
+        //   setQrCodeValue(
+        //     "https://apps.apple.com/app/connect-plus/id6504287764"
+        //   ); // Default to App Store
+        // }
         setIsModalOpen(true);
       };
 
@@ -75,14 +83,43 @@ const ScanQR = ({ className = "" }) => {
             <div className="absolute top-[53px] left-[25px] h-[90px] w-[2px] bg-lime-100"></div>
             <div className="absolute top-[100px] left-[25px] h-[90px] w-[2px] bg-lime-100 mq450:top-[120px]"></div>
           </div>
-          <button
-            className="cursor-pointer py-5 px-10 bg-gainsboro-200 rounded-xl overflow-hidden flex flex-row items-start justify-start whitespace-nowrap border-[1px] border-solid border-white hover:bg-silver hover:box-border hover:border-[1px] hover:border-solid hover:border-gainsboro-100 mq450:min-w-full mq1050:flex-1 mq750:w-full mq450:justify-center"
-            onClick={handleButtonClick}
-          >
-            <b className="relative text-11xl leading-[25px] font-poppins text-limegreen text-center">
-              Get the app
-            </b>
-          </button>
+          {isIOS ? (
+            <a
+              href="https://apps.apple.com/app/connect-plus/id6504287764"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="self-stretch w-52 relative object-contain min-h-[80px] mq450:w-[90%] mq450:object-contain mq450:h-[30px]"
+                loading="lazy"
+                alt="Download on the App Store"
+                src={AppStore}
+              />
+            </a>
+          ) : isAndroid ? (
+            <a
+              href="https://play.google.com/store/apps/details?id=com.connect.driverapp"
+              className="mr-4"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="self-stretch w-[235px] relative object-contain min-h-[80px] mq450:w-[80%] mq450:object-contain mq450:h-[40px] mq450:pl-[20px]"
+                loading="lazy"
+                alt="Get it on Google Play"
+                src={PlayStore}
+              />
+            </a>
+          ) : (
+            <button
+              className="cursor-pointer py-5 px-10 bg-gainsboro-200 rounded-xl overflow-hidden flex flex-row items-start justify-start whitespace-nowrap border-[1px] border-solid border-white hover:bg-silver hover:box-border hover:border-[1px] hover:border-solid hover:border-gainsboro-100 mq450:min-w-full mq1050:flex-1 mq750:w-full mq450:justify-center"
+              onClick={handleButtonClick}
+            >
+              <b className="relative text-11xl leading-[25px] font-poppins text-limegreen text-center">
+                Get the app
+              </b>
+            </button>
+          )}
         </div>
         <div className="h-[526px] w-[343px] flex flex-col items-start justify-start pt-0.5 px-0 pb-0 box-border min-w-[343px] max-w-full mq450:min-w-full mq1050:flex-1">
           <img
@@ -96,7 +133,7 @@ const ScanQR = ({ className = "" }) => {
       <QRCodeModal
         isOpen={isModalOpen}
         onClose={handleCloseModal}
-        qrCodeValue={qrCodeValue}
+        qrCodeValue={"https://app.connectplus.org.uk/test1/redirect.html"}
       />
     </section>
   );
