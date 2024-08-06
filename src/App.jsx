@@ -1,6 +1,6 @@
+/** @format */
 
-
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import {
   Routes,
   Route,
@@ -16,23 +16,37 @@ import AboutUs from "./pages/AboutUs";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import ScrollToTop from "./components/ScrollToTop";
+import CookieConsent from "./components/CookieConsent";
+import PreLoader from "./components/Loader";
 const App = () => {
-   const action = useNavigationType();
-   const location = useLocation();
-   const pathname = location.pathname;
+  const [isPreloaderComplete, setIsPreloaderComplete] = useState(false);
+  const action = useNavigationType();
+  const location = useLocation();
+  const pathname = location.pathname;
   return (
-    <ScrollToTop>
-      <Routes>
-        <Route path="/" element={<HomePg />} />
-        <Route path="/blogs" element={<BlogsPg />} />
-        <Route path="/blog/:id" element={<BlogContent />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact-us" element={<ContactUs />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
-      </Routes>
-    </ScrollToTop>
+    <>
+      {!isPreloaderComplete && (
+        <PreLoader onComplete={() => setIsPreloaderComplete(true)} />
+      )}
+      {isPreloaderComplete && (
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" element={<HomePg />} />
+            <Route path="/blogs" element={<BlogsPg />} />
+            <Route path="/blog/:id" element={<BlogContent />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route
+              path="/terms-and-conditions"
+              element={<TermsAndConditions />}
+            />
+          </Routes>
+          <CookieConsent />
+        </ScrollToTop>
+      )}
+    </>
   );
 };
 

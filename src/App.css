@@ -1,0 +1,11 @@
+.custom-dropdown {
+  position: relative;
+}
+
+.custom-dropdown select {
+  appearance: none;
+}
+
+.custom-dropdown img {
+  pointer-events: none;
+}

@@ -1,0 +1,116 @@
+ {
+    
+    "navbar": {
+    "home": "Home",
+    "blogs":"Blogs",
+    "about us": "About Us",
+    "services":"Services",
+    "contact us": "Contact Us"
+  },
+     "hero":{
+      "welcomeMessage1": "Your Ride,",
+      "welcomeMessage2": "Just a Tap Away!",
+      "welcomeSubMessage1": "Simplify Your Commute with",
+      "welcomeSubMessage2": "Instant Ride Bookings",
+      "welcomeSubMessage3": "from Your Phone.",
+      "bookRideButton": "Book A Ride"
+    },
+    "about-us":{
+        "aboutTitle": "About Us",
+        "aboutDescription": "Connect+ is an innovative ride-hailing platform that revolutionizes transportation by offering:",
+        "aboutListItem1":"transparent pricing and a unique bid system",
+        "aboutListItem2": "Designed for both passengers and drivers",
+        "aboutListItem3": "Connect+ ensures a seamless, safe, and convenient travel experience"
+    },
+    "our-services":{
+      "ourServicesTitle": "Our Services",
+      "service1":"Car Rentals",
+      "service2":"Rides",
+      "service3":"Car Sharing",
+      "service4":"Bikes"
+    },
+    "use-app":{
+      "useAppHeading1": "How to install",
+      "useAppHeading2":"How to use driver app",
+      "use-driver":{
+        "useDriverTitle1": "How to use",
+        "useDriverTitle2": "driver App:",
+        "step1":"Sign Up/Log In.",
+        "step2":"Enter pick up or drop location.",
+        "step3":"Enjoy your ride."
+      },
+      "install-app":{
+        "installAppTitle1": "How to",
+        "installAppTitle2": "Install App:",
+        "step1":"Open the Google Play Store.",
+        "step2":"Search for the App.",
+        "step3":"Install the App."
+      }
+    },
+    "success":{
+      "successTitle1": "Drive Your ",
+      "successTitle2": "Success",
+      "successTitle3": "with Our Innovative App:",
+      "success1":"Increased Earnings Potential",
+      "success2":"Easy Payments",
+      "success3":"Millions of passangers",
+      "success4":"Make the city your office"
+    },
+    "scan-qr":{
+      "scanQRHeading1": "Scan",
+      "scanQRHeading2": "QR",
+      "scanQRHeading3": "and Book Instantly",
+      "step1":"Scan the QR.",
+      "step2":"Download our app.",
+      "step3":"Enjoy our app for both business and self convenience.",
+      "scanQRButton": "Get the app",
+      "scanQRModalTitle":"Get the Connect+ app",
+      "scanQRModalDescription1":"Scan the QR code with your phone",
+      "scanQRModalDescription2":"camera to download Connect+ app"
+    },
+    "blogs-section":{
+      "blogsTitle1": "Our",
+      "blogsTitle2": "Blogs",
+      "blogButton":"Read More"
+    },
+    "footer":{
+      "footerText1": "Where",
+      "footerText2": "convenience",
+      "footerText3": "safety",
+      "footerText4": "and",
+      "footerText5": "transparency",
+      "footerText6": "meet.",
+      "footerLinkHeading":"Legal Info",
+      "footerLink1":"Privacy Policy",
+      "footerLink2":"Terms & Conditions",
+      "footerLink3":"Cookie Policy",
+      "footerLocation":"London, UK.",
+      "copyRight":"Copyrights 2024 All Rights reserved"
+    },
+    "about-main":{
+      "aboutTitle1": "About Us",
+      "aboutTitle2":"Our Vision" ,
+      "aboutTitle3": "Our Mission",
+      "aboutDescription1": "Connect+ was founded with a clear vision: to create a ride-hailing platform that prioritizes user control, reliability, and sustainability. We believe that everyone deserves access to convenient and affordable transportation options, and we are committed to making this a reality throughour innovative features and user-centric approach.",
+      "aboutDescription2": "Welcome to Connect+, the innovative ride-hailing platform that redefines the transportation experience. At Connect+, we are dedicated to providing a seamless, safe, and efficient travel solution for both passengers and drivers. Our mission is to revolutionize the way people move, leveraging advanced technology to offer unparalleled convenience and transparency in the ride-hailing industry."
+    },
+    "services-main":{
+      "servicesTitle1": "Our Services",
+      "service1": "Car Rentals",
+      "service2": "Rides",
+      "service3": "Car Sharing",
+      "service4": "Bikes",
+      "service1Description":"Easily book your car online with our user-friendly system.Explore our diverse range of rental cars to find the perfect match for your journey. Whether you're planning a weekend getaway, a business trip, or a family vacation, we have the right vehicle to suit your needs.",
+      "service2Description":"Discover a new level of comfort and convenience with our ride services. Whether you're commuting to work, heading to the airport, or enjoying a night out, our reliable rides ensure you reach your destination safely and on time.",
+      "service3Description":"Our car sharing services offer reliable and affordable rides to get you where you need to go. With a fleet of well-maintained vehicles and professional drivers, we ensure a comfortable and safe ride every time.",
+      "service4Description":"Experience the freedom and excitement of exploring the city on two wheels with our bike rental services. Whether you're commuting, running errands, or enjoying a leisurely ride, our bikes offer a convenient and eco-friendly way to get around.",
+      "serviceButton":"Book Now"
+    },
+    "contact":{
+      "contactTitle": "Contact Us",
+      "namePlaceholder":"Enter your name",
+      "emailPlaceholder":"Enter your email address",
+      "messagePlaceholder":"Go ahead, We are listening...",
+      "submitButton":"Submit"
+    }
+}

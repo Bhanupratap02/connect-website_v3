@@ -1,33 +1,79 @@
+/** @format */
+
 import Card from "./Card";
 import PropTypes from "prop-types";
-import { Isolation2,Frame148,Frame1481,Frame1482,Building } from "../assets";
+import {
+  Isolation2,
+  Frame148,
+  Frame1481,
+  Frame1482,
+  Building,
+} from "../assets";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
+
+gsap.registerPlugin(ScrollTrigger);
 const DriveSuccess = ({ className = "" }) => {
+  const { t } = useTranslation();
+  const cardRefs = useRef([]);
+
+  useEffect(() => {
+    const cards = cardRefs.current;
+    if (cards) {
+      gsap.fromTo(
+        cards,
+        {
+          opacity: 0,
+          y: 50,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: cards[0].parentNode, // Trigger based on the parent element of all cards
+            start: "top 80%", // Adjust start point as needed
+            end: "bottom 20%", // Adjust end point as needed
+            scrub: 1,
+            toggleActions: "play none none reverse",
+          },
+          stagger: 0.2, // Stagger animation for each card
+        }
+      );
+    }
+  }, []);
   return (
     <section
-      className={`self-stretch flex flex-row items-start justify-start pt-0 px-[70px]  box-border max-w-full text-left text-26xl text-darkslategray-400 font-poppins mq750:pb-[122px] mq750:box-border mq1050:pb-[87px] mq450:pb-[5px] mq750:px-[10px] mq1050:box-border ${className}`}
+      className={`self-stretch flex flex-row items-start justify-start pt-0 px-[70px]  box-border max-w-full text-left text-26xl text-darkslategray-400 dark:text-white font-poppins mq750:pb-[122px] mq750:box-border mq1050:pb-[87px] mq450:pb-[5px] mq750:px-[10px] mq1050:box-border ${className}`}
     >
-      <div className="flex-1 bg-white overflow-hidden flex flex-col items-start justify-start pt-[99px] px-[90px] pb-[90px] box-border relative gap-[90px] max-w-full z-[2] mq450:gap-[22px] mq450:pl-5 mq450:pr-5 mq450:box-border mq750:gap-[45px] mq750:pt-16 mq750:px-[45px] mq750:pb-[58px] mq750:box-border">
+      <div className="flex-1 bg-white dark:bg-black overflow-hidden flex flex-col items-start justify-start pt-[99px] px-[90px] pb-[90px] box-border relative gap-[90px] max-w-full z-[2] mq450:gap-[22px] mq450:pl-5 mq450:pr-5 mq450:box-border mq750:gap-[45px] mq750:pt-16 mq750:px-[45px] mq750:pb-[58px] mq750:box-border">
         <img
-          className="w-[1940px] h-[747.1px] absolute !m-[0] bottom-[0px] left-[-268.4px]"
+          className="w-[1940px] h-[747.1px] absolute !m-[0] bottom-[0px]  left-[-268.4px]"
           alt=""
           src={Isolation2}
         />
         <div className="w-[559px] flex flex-col items-start justify-start gap-[15px] max-w-full">
           <div className="self-stretch h-[90px] relative leading-[55px] inline-block z-[1] mq450:text-8xl mq450:leading-[33px] mq1050:text-17xl mq1050:leading-[44px]">
             <p className="m-0">
-              <span>{`Drive Your `}</span>
+              <span> {t("success.successTitle1")}</span>
               <b className="text-31xl font-poppins text-transparent !bg-clip-text [background:linear-gradient(131.74deg,_#00ff00,_#009900)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
-                Success
+                {t("success.successTitle2")}
               </b>
             </p>
-            <p className="m-0">with Our Innovative App:</p>
+            <p className="m-0">{t("success.successTitle3")}</p>
           </div>
-          <div className="w-[385px] h-0.5 relative box-border max-w-full z-[1] border-t-[2px] border-solid border-darkslategray-400" />
+          <div className="w-[385px] h-0.5 relative box-border max-w-full z-[1] border-t-[2px] border-solid border-darkslategray-400 dark:border-white" />
         </div>
-        <div className="self-stretch grid flex-row items-start justify-start gap-[36px] grid-cols-[repeat(4,_minmax(216px,_1fr))] text-13xl lg:justify-center lg:grid-cols-[repeat(2,_minmax(216px,_374px))] mq750:gap-[18px] mq750:grid-cols-[minmax(216px,_1fr)]">
-          <div className="h-[350px] relative rounded-21xl [background:linear-gradient(124.1deg,_#e2e2e2,_#fff)] box-border overflow-hidden z-[1] border-[1px] border-solid border-darkgray">
-            <div className="absolute top-[35px] left-[35px] leading-[35px] inline-block w-[185px] z-[1] mq450:text-lgi mq450:leading-[21px] mq1050:text-7xl mq1050:leading-[28px] text-8xl">
-              Increased Earnings Potential
+        <div className="self-stretch grid flex-row items-start justify-start gap-[30px] grid-cols-[repeat(4,_minmax(216px,_1fr))] text-13xl lg:justify-center lg:grid-cols-[repeat(2,_minmax(216px,_374px))] mq750:gap-[18px] mq750:grid-cols-[minmax(216px,_1fr)]">
+          {/* <div
+            ref={(el) => (cardRefs.current[0] = el)}
+            className="h-[350px] relative rounded-21xl [background:linear-gradient(124.1deg,_#e2e2e2,_#fff)] dark:[background:linear-gradient(124.1deg,_#161616,_#000)] box-border overflow-hidden z-[1] border-[1px] border-solid border-darkgray"
+          >
+            <div className="absolute top-[35px] left-[0px] leading-[35px] inline-block w-[185px] z-[1] mq450:text-lgi mq450:leading-[21px] mq1050:text-7xl mq1050:leading-[28px] text-8xl">
+              {t("success.success1")}
             </div>
             <div className="absolute top-[-22px] left-[-27px] w-[314px] h-[391px]">
               <div className="absolute top-[0px] left-[0px] [filter:blur(300px)] rounded-[50%] bg-lime-400 w-[213px] h-[220px]" />
@@ -38,10 +84,31 @@ const DriveSuccess = ({ className = "" }) => {
                 src={Frame148}
               />
             </div>
-          </div>
-          <Card easyPayments="Easy Payments" frame148={Frame1481} />
-          <Card easyPayments="Millions of passangers" frame148={Frame1482} />
-          <Card easyPayments="Make the city your office" frame148={Building} />
+          </div> */}
+          <Card
+            ref={(el) => (cardRefs.current[0] = el)}
+            easyPayments={t("success.success1")}
+            frame148={Frame148}
+            isBlur={true}
+          />
+          <Card
+            ref={(el) => (cardRefs.current[1] = el)}
+            easyPayments={t("success.success2")}
+            frame148={Frame1481}
+            isBlur={false}
+          />
+          <Card
+            ref={(el) => (cardRefs.current[2] = el)}
+            easyPayments={t("success.success3")}
+            frame148={Frame1482}
+            isBlur={false}
+          />
+          <Card
+            ref={(el) => (cardRefs.current[3] = el)}
+            easyPayments={t("success.success4")}
+            frame148={Building}
+            isBlur={false}
+          />
           {/* <div className="rounded-21xl [background:linear-gradient(124.1deg,_#e2e2e2,_#fff)] overflow-hidden flex flex-col items-start justify-start pt-[33px] px-0 pb-0 gap-[43px] z-[1] border-[1px] border-solid border-darkgray mq450:gap-[21px]">
             <div className="w-72 flex flex-row items-start justify-start py-0 pr-[37px] pl-[35px] box-border">
               <div className="flex-1 relative leading-[35px] mq450:text-lgi mq450:leading-[21px] mq1050:text-7xl mq1050:leading-[28px]">

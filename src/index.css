@@ -12,4 +12,54 @@ body {
 ::after {
   border-width: 0;
 }
+.bg-light-gradient {
+  background: linear-gradient(rgba(60, 251, 60, 0.2), rgba(60, 251, 60, 0.2)),
+    linear-gradient(123.01deg, #e2e2e2, #fff);
+}
+/* Dark mode gradient */
+.dark .bg-dark-gradient {
+  background: linear-gradient(
+      124.1deg,
+      #161616 8.78%,
+      #0c0c0c 96.76%
+    ),
+    linear-gradient(0deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0.2));
+}
+/* Add this to your CSS or Tailwind configuration */
 
+input:focus,
+textarea:focus {
+  transition: all 0.3s ease;
+  transform: scale(1.05);
+  /* box-shadow: 0 0 10px rgba(102, 106, 245, 0.5); */
+}
+button:hover {
+  transition: all 0.3s ease;
+  /* background-color: #d1d1d1; */
+  transform: translateY(-2px);
+}
+
+.loader {
+  border-top-color: #3490dc; /* Change the color as needed */
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.clip-triangle {
+  clip-path: polygon(-32% 100%, 100% -0%, 100% 100%, 100% 100%, 0 100%);
+}
+.clip-triangle img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

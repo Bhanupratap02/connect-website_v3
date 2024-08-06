@@ -1,8 +1,22 @@
-/** @type {import('tailwindcss').Config} */
+/**
+ * @format
+ * @type {import('tailwindcss').Config}
+ */
+
 module.exports = {
+  darkMode: "class",
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      animation: {
+        subtleBounce: "subtleBounce 2s infinite",
+      },
+      keyframes: {
+        subtleBounce: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" }, // Adjust the translate value for subtler bounce
+        },
+      },
       colors: {
         white: "#fff",
         whitesmoke: {
@@ -12,6 +26,7 @@ module.exports = {
           400: "#eaeaea",
         },
         darkgray: "#979797",
+
         darkslategray: {
           100: "#3e3e3e",
           200: "#393939",
@@ -32,6 +47,8 @@ module.exports = {
           400: "#d9d9d9",
         },
         silver: "#c9c9c9",
+
+        lightdark: "#1A1919",
       },
       spacing: {},
       fontFamily: {
@@ -77,7 +94,7 @@ module.exports = {
       lg: {
         max: "1200px",
       },
-    
+
       mq1050: {
         raw: "screen and (max-width: 1050px)",
       },

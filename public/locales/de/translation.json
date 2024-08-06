@@ -1,0 +1,115 @@
+{
+  "navbar": {
+    "home": "Startseite",
+    "blogs": "Blogs",
+    "about us": "Über uns",
+    "services": "Dienstleistungen",
+    "contact us": "Kontakt"
+  },
+  "hero": {
+    "welcomeMessage1": "Ihre Fahrt,",
+    "welcomeMessage2": "Nur ein Tap entfernt!",
+    "welcomeSubMessage1": "Vereinfachen Sie Ihren Arbeitsweg mit",
+    "welcomeSubMessage2": "sofortigen Fahrbuchungen",
+    "welcomeSubMessage3": "von Ihrem Telefon.",
+    "bookRideButton": "Fahrt Buchen"
+  },
+  "about-us": {
+    "aboutTitle": "Über uns",
+    "aboutDescription": "Connect+ ist eine innovative Fahrdienstplattform, die den Transport revolutioniert, indem sie:",
+    "aboutListItem1": "transparente Preise und ein einzigartiges Gebotssystem anbietet",
+    "aboutListItem2": "Für sowohl Passagiere als auch Fahrer entwickelt",
+    "aboutListItem3": "Connect+ sorgt für ein nahtloses, sicheres und bequemes Reiseerlebnis"
+  },
+  "our-services": {
+    "ourServicesTitle": "Unsere Dienstleistungen",
+    "service1": "Autovermietungen",
+    "service2": "Fahrten",
+    "service3": "Carsharing",
+    "service4": "Motorräder"
+  },
+  "use-app": {
+    "useAppHeading1": "Wie man installiert",
+    "useAppHeading2": "Wie man die Fahrer-App benutzt",
+    "use-driver": {
+      "useDriverTitle1": "Wie man die",
+      "useDriverTitle2": "Fahrer-App benutzt:",
+      "step1": "Anmelden/Einloggen.",
+      "step2": "Abhol- oder Abgabestandort eingeben.",
+      "step3": "Genießen Sie Ihre Fahrt."
+    },
+    "install-app": {
+      "installAppTitle1": "Wie man die",
+      "installAppTitle2": "App installiert:",
+      "step1": "Öffnen Sie den Google Play Store.",
+      "step2": "Suchen Sie nach der App.",
+      "step3": "Installieren Sie die App."
+    }
+  },
+  "success": {
+    "successTitle1": "Fahren Sie Ihren",
+    "successTitle2": "Erfolg",
+    "successTitle3": "mit unserer innovativen App:",
+    "success1": "Erhöhtes Verdienstpotenzial",
+    "success2": "Einfache Zahlungen",
+    "success3": "Millionen von Passagieren",
+    "success4": "Machen Sie die Stadt zu Ihrem Büro"
+  },
+  "scan-qr": {
+    "scanQRHeading1": "Scannen",
+    "scanQRHeading2": "QR",
+    "scanQRHeading3": "und sofort buchen",
+    "step1": "Scannen Sie den QR-Code.",
+    "step2": "Laden Sie unsere App herunter.",
+    "step3": "Genießen Sie unsere App für geschäftliche und private Zwecke.",
+    "scanQRButton": "App holen",
+    "scanQRModalTitle": "Holen Sie sich die Connect+ App",
+    "scanQRModalDescription1": "Scannen Sie den QR-Code mit der Kamera Ihres Telefons",
+    "scanQRModalDescription2": "um die Connect+ App herunterzuladen"
+  },
+  "blogs-section": {
+    "blogsTitle1": "Unsere",
+    "blogsTitle2": "Blogs",
+    "blogButton": "Mehr lesen"
+  },
+  "footer": {
+    "footerText1": "Wo",
+    "footerText2": "Bequemlichkeit",
+    "footerText3": "Sicherheit",
+    "footerText4": "und",
+    "footerText5": "Transparenz",
+    "footerText6": "sich treffen.",
+    "footerLinkHeading": "Rechtliche Informationen",
+    "footerLink1": "Datenschutzrichtlinie",
+    "footerLink2": "Nutzungsbedingungen",
+    "footerLink3": "Cookie-Richtlinie",
+    "footerLocation": "London, UK.",
+    "copyRight": "Urheberrechte 2024 Alle Rechte vorbehalten"
+  },
+    "about-main": {
+    "aboutTitle1": "Über uns",
+    "aboutTitle2": "Unsere Vision",
+    "aboutTitle3": "Unsere Mission",
+    "aboutDescription1": "Connect+ wurde mit einer klaren Vision gegründet: eine Mitfahrplattform zu schaffen, die Benutzerkontrolle, Zuverlässigkeit und Nachhaltigkeit in den Vordergrund stellt. Wir glauben, dass jeder Zugang zu bequemen und erschwinglichen Transportmöglichkeiten verdient, und wir setzen uns dafür ein, dies durch unsere innovativen Funktionen und benutzerzentrierten Ansatz zu verwirklichen.",
+    "aboutDescription2": "Willkommen bei Connect+, der innovativen Mitfahrplattform, die das Transporterlebnis neu definiert. Bei Connect+ sind wir bestrebt, sowohl für Passagiere als auch für Fahrer eine nahtlose, sichere und effiziente Reisemöglichkeit zu bieten. Unsere Mission ist es, die Art und Weise, wie Menschen sich fortbewegen, zu revolutionieren, indem wir fortschrittliche Technologie nutzen, um unvergleichlichen Komfort und Transparenz in der Mitfahrbranche zu bieten."
+  },
+    "services-main": {
+    "servicesTitle1": "Unsere Dienstleistungen",
+    "service1": "Autovermietung",
+    "service2": "Fahrten",
+    "service3": "Carsharing",
+    "service4": "Fahrräder",
+    "service1Description": "Buchen Sie Ihr Auto einfach online mit unserem benutzerfreundlichen System. Entdecken Sie unser vielfältiges Angebot an Mietwagen, um das perfekte Fahrzeug für Ihre Reise zu finden. Egal, ob Sie einen Wochenendausflug, eine Geschäftsreise oder einen Familienurlaub planen, wir haben das richtige Fahrzeug für Ihre Bedürfnisse.",
+    "service2Description": "Erleben Sie ein neues Maß an Komfort und Bequemlichkeit mit unseren Fahrdiensten. Egal, ob Sie zur Arbeit pendeln, zum Flughafen fahren oder einen Abend auswärts genießen, unsere zuverlässigen Fahrten sorgen dafür, dass Sie sicher und pünktlich an Ihr Ziel gelangen.",
+    "service3Description": "Unsere Carsharing services bieten zuverlässige und erschwingliche Fahrten, um Sie dorthin zu bringen, wo Sie hin müssen. Mit einer Flotte von gut gewarteten Fahrzeugen und professionellen Fahrern sorgen wir jedes Mal für eine komfortable und sichere Fahrt.",
+    "service4Description": "Erleben Sie die Freiheit und das Vergnügen, die Stadt auf zwei Rädern zu erkunden, mit unseren Fahrradverleihdiensten. Ob Sie pendeln, Besorgungen erledigen oder eine gemütliche Fahrt genießen möchten, unsere Fahrräder bieten eine bequeme und umweltfreundliche Möglichkeit, sich fortzubewegen.",
+    "serviceButton": "Jetzt buchen"
+  },
+    "contact": {
+    "contactTitle": "Kontaktieren Sie uns",
+    "namePlaceholder": "Geben Sie Ihren Namen ein",
+    "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "messagePlaceholder": "Los, wir hören zu...",
+    "submitButton": "Einreichen"
+  }
+}

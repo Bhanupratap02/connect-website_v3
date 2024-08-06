@@ -1,0 +1,115 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "blogs": "Blogs",
+    "about us": "À propos de nous",
+    "services": "Services",
+    "contact us": "Contactez-nous"
+  },
+  "hero": {
+    "welcomeMessage1": "Votre trajet,",
+    "welcomeMessage2": "à portée de tap!",
+    "welcomeSubMessage1": "Simplifiez vos déplacements avec",
+    "welcomeSubMessage2": "des réservations de trajet instantanées",
+    "welcomeSubMessage3": "depuis votre téléphone.",
+    "bookRideButton": "Réserver un trajet"
+  },
+  "about-us": {
+    "aboutTitle": "À propos de nous",
+    "aboutDescription": "Connect+ est une plateforme de covoiturage innovante qui révolutionne le transport en offrant:",
+    "aboutListItem1": "des tarifs transparents et un système de soumission unique",
+    "aboutListItem2": "Conçu pour les passagers et les conducteurs",
+    "aboutListItem3": "Connect+ garantit une expérience de voyage fluide, sûre et pratique"
+  },
+  "our-services": {
+    "ourServicesTitle": "Nos Services",
+    "service1": "Locations de voitures",
+    "service2": "Trajets",
+    "service3": "Autopartage",
+    "service4": "Motos"
+  },
+  "use-app": {
+    "useAppHeading1": "Comment installer",
+    "useAppHeading2": "Comment utiliser l'application conducteur",
+    "use-driver": {
+      "useDriverTitle1": "Comment utiliser",
+      "useDriverTitle2": "l'application conducteur:",
+      "step1": "Inscrivez-vous/Connectez-vous.",
+      "step2": "Entrez le lieu de prise en charge ou de dépose.",
+      "step3": "Profitez de votre trajet."
+    },
+    "install-app": {
+      "installAppTitle1": "Comment",
+      "installAppTitle2": "installer l'application:",
+      "step1": "Ouvrez le Google Play Store.",
+      "step2": "Recherchez l'application.",
+      "step3": "Installez l'application."
+    }
+  },
+  "success": {
+    "successTitle1": "Conduisez votre",
+    "successTitle2": "Succès",
+    "successTitle3": "avec notre application innovante:",
+    "success1": "Potentiel de revenus accru",
+    "success2": "Paiements faciles",
+    "success3": "Des millions de passagers",
+    "success4": "Faites de la ville votre bureau"
+  },
+  "scan-qr": {
+    "scanQRHeading1": "Scannez",
+    "scanQRHeading2": "le QR",
+    "scanQRHeading3": "et réservez instantanément",
+    "step1": "Scannez le QR.",
+    "step2": "Téléchargez notre application.",
+    "step3": "Profitez de notre application pour les affaires et la commodité personnelle.",
+    "scanQRButton": "Obtenir l'application",
+    "scanQRModalTitle": "Obtenez l'application Connect+",
+    "scanQRModalDescription1": "Scannez le code QR avec la caméra de votre téléphone",
+    "scanQRModalDescription2": "pour télécharger l'application Connect+"
+  },
+  "blogs-section": {
+    "blogsTitle1": "Nos",
+    "blogsTitle2": "Blogs",
+    "blogButton": "Lire la suite"
+  },
+  "footer": {
+    "footerText1": "Où",
+    "footerText2": "commodité",
+    "footerText3": "sécurité",
+    "footerText4": "et",
+    "footerText5": "transparence",
+    "footerText6": "se rencontrent.",
+    "footerLinkHeading": "Infos légales",
+    "footerLink1": "Politique de confidentialité",
+    "footerLink2": "Conditions d'utilisation",
+    "footerLink3": "Politique de cookies",
+    "footerLocation": "London, UK.",
+    "copyRight": "Droits d'auteur 2024 Tous droits réservés"
+  },
+    "about-main": {
+    "aboutTitle1": "À propos de nous",
+    "aboutTitle2": "Notre vision",
+    "aboutTitle3": "Notre mission",
+    "aboutDescription1": "Connect+ a été fondé avec une vision claire : créer une plateforme de covoiturage qui met l'accent sur le contrôle de l'utilisateur, la fiabilité et la durabilité. Nous croyons que tout le monde mérite un accès à des options de transport pratiques et abordables, et nous nous engageons à faire de cette vision une réalité grâce à nos fonctionnalités innovantes et notre approche centrée sur l'utilisateur.",
+    "aboutDescription2": "Bienvenue chez Connect+, la plateforme de covoiturage innovante qui redéfinit l'expérience de transport. Chez Connect+, nous nous engageons à fournir une solution de voyage transparente, sûre et efficace pour les passagers et les conducteurs. Notre mission est de révolutionner la façon dont les gens se déplacent en utilisant des technologies avancées pour offrir une commodité et une transparence inégalées dans l'industrie du covoiturage."
+  },
+    "services-main": {
+    "servicesTitle1": "Nos services",
+    "service1": "Location de voitures",
+    "service2": "Trajets",
+    "service3": "Autopartage",
+    "service4": "Vélos",
+    "service1Description": "Réservez facilement votre voiture en ligne grâce à notre système convivial. Explorez notre large gamme de voitures de location pour trouver le véhicule parfait pour votre voyage. Que vous planifiez une escapade de week-end, un voyage d'affaires ou des vacances en famille, nous avons le véhicule qui correspond à vos besoins.",
+    "service2Description": "Découvrez un nouveau niveau de confort et de commodité avec nos services de trajet. Que vous vous rendiez au travail, à l'aéroport ou que vous passiez une soirée en ville, nos trajets fiables vous assurent d'arriver à destination en toute sécurité et à l'heure.",
+    "service3Description": "Nos services de Autopartage offrent des trajets fiables et abordables pour vous emmener là où vous devez aller. Avec une flotte de véhicules bien entretenus et des conducteurs professionnels, nous garantissons un trajet confortable et sûr à chaque fois.",
+    "service4Description": "Découvrez la liberté et le plaisir d'explorer la ville à deux roues avec nos services de location de vélos. Que vous alliez au travail, que vous fassiez des courses ou que vous profitiez d'une balade tranquille, nos vélos offrent une manière pratique et écologique de se déplacer.",
+    "serviceButton": "Réserver maintenant"
+  },
+    "contact": {
+    "contactTitle": "Nous contacter",
+    "namePlaceholder": "Entrez votre nom",
+    "emailPlaceholder": "Entrez votre adresse e-mail",
+    "messagePlaceholder": "Allez-y, nous écoutons...",
+    "submitButton": "Soumettre"
+  }
+}

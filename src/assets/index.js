@@ -47,9 +47,47 @@ import Hamer from "./hamer.svg";
 import Bulb from "./bulb.svg";
 import Globe from "./globe.svg";
 import Coin from "./coin.svg";
-import Taxi7 from "./Taxi7.svg"
+import Taxi7 from "./Taxi7.svg";
 import Taxi6 from "./Taxi6.svg";
 import Taxi5 from "./Taxi5.svg";
+import Facebook from "./facebook.svg";
+import Instagram from "./instagram.svg";
+import Twitter from "./twitter.svg";
+import Youtube from "./youtube.svg";
+import BulbCard from "./bulb-card.png";
+import CoinCard from "./coin-card.png";
+import GlobeCard from "./globe-card.png";
+import HammerCard from "./hammer-card.png";
+import HandCard from "./hand-card.png";
+import ShieldCard from "./shield-card.png";
+import TaxiCard from "./taxi-card.png";
+import DarkAppStore from "./dark-app-store.svg";
+import DarkPlayStore from "./dark-play-store.svg";
+import PreLoader from "./preloader.gif";
+import DarkFooterImg from "./dark-footer-img.svg";
+import DarkBuildingGrp from "./dark-building-grp.svg";
+import DarkBike from "./Dark-Bike.svg";
+import DarkCar from "./Dark-Car.svg";
+import DarkMission from "./Dark-Mission.svg";
+import DarkRide from "./Dark-Ride.svg";
+import DarkTaxi from "./Dark-Taxi.svg";
+import DarkVision from "./Dark-Vision.svg";
+import Moon from "./moon.svg";
+import Sun from "./sun.png";
+import DarkContact from "./DarkContact.svg"
+import MenuDark from "./menu-dark.svg"
+import CloseDark from "./close-dark.svg"
+import HeroBuildingBg from "./hero-bg.svg";
+import HeroCarImg from "./hero-car.svg";
+import HeroCharacterImg from "./hero-character.svg";
+import HeroCarPersonImg from "./hero-car-person.svg";
+import DarkHeroBuildingBg from "./dark-hero-bg.svg";
+import CarRental2 from "./car-rental.svg";
+import Taxi8 from "./Taxi8.svg";
+import Rides from "./Rides.svg"
+import LanguageIcon from "./language-icon.svg";
+import DropDownIcon from "./dropdown-icon.svg";
+import DropDownIconDarkTheme from "./dropdown-icon-dark-theme.svg"
 export {
   menu,
   close,
@@ -101,4 +139,42 @@ export {
   Taxi5,
   Taxi6,
   Taxi7,
+  Facebook,
+  Instagram,
+  Twitter,
+  Youtube,
+  BulbCard,
+  CoinCard,
+  HammerCard,
+  HandCard,
+  GlobeCard,
+  ShieldCard,
+  TaxiCard,
+  DarkAppStore,
+  DarkPlayStore,
+  PreLoader,
+  DarkBuildingGrp,
+  DarkFooterImg,
+  DarkBike,
+  DarkCar,
+  DarkRide,
+  DarkTaxi,
+  DarkVision,
+  DarkMission,
+  DarkContact,
+  Sun,
+  Moon,
+  MenuDark,
+  CloseDark,
+  HeroBuildingBg,
+  HeroCarImg,
+  HeroCharacterImg,
+  HeroCarPersonImg,
+  DarkHeroBuildingBg,
+  CarRental2,
+  Taxi8,
+  Rides,
+  LanguageIcon,
+  DropDownIcon,
+  DropDownIconDarkTheme,
 };

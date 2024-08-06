@@ -1,0 +1,115 @@
+{
+  "navbar": {
+    "home": "Home",
+    "blogs": "Blogs",
+    "about us": "Chi siamo",
+    "services": "Servizi",
+    "contact us": "Contattaci"
+  },
+  "hero": {
+    "welcomeMessage1": "Il tuo viaggio,",
+    "welcomeMessage2": "a portata di tocco!",
+    "welcomeSubMessage1": "Semplifica il tuo tragitto con",
+    "welcomeSubMessage2": "prenotazioni immediate",
+    "welcomeSubMessage3": "dal tuo telefono.",
+    "bookRideButton": "Prenota una corsa"
+  },
+  "about-us": {
+    "aboutTitle": "Chi siamo",
+    "aboutDescription": "Connect+ è una piattaforma di ride-hailing innovativa che rivoluziona il trasporto offrendo:",
+    "aboutListItem1": "tariffe trasparenti e un sistema di offerta unico",
+    "aboutListItem2": "Progettato per passeggeri e conducenti",
+    "aboutListItem3": "Connect+ garantisce un'esperienza di viaggio senza soluzione di continuità, sicura e conveniente"
+  },
+  "our-services": {
+    "ourServicesTitle": "I nostri Servizi",
+    "service1": "Noleggio auto",
+    "service2": "Corse",
+    "service3": "Car sharing",
+    "service4": "Moto"
+  },
+  "use-app": {
+    "useAppHeading1": "Come installare",
+    "useAppHeading2": "Come usare l'app per conducenti",
+    "use-driver": {
+      "useDriverTitle1": "Come usare",
+      "useDriverTitle2": "l'app per conducenti:",
+      "step1": "Iscriviti/Accedi.",
+      "step2": "Inserisci il luogo di prelievo o di consegna.",
+      "step3": "Goditi il tuo viaggio."
+    },
+    "install-app": {
+      "installAppTitle1": "Come",
+      "installAppTitle2": "installare l'app:",
+      "step1": "Apri il Google Play Store.",
+      "step2": "Cerca l'app.",
+      "step3": "Installa l'app."
+    }
+  },
+  "success": {
+    "successTitle1": "Guida il tuo",
+    "successTitle2": "Successo",
+    "successTitle3": "con la nostra app innovativa:",
+    "success1": "Maggiore potenziale di guadagno",
+    "success2": "Pagamenti facili",
+    "success3": "Milioni di passeggeri",
+    "success4": "Rendi la città il tuo ufficio"
+  },
+  "scan-qr": {
+    "scanQRHeading1": "Scansiona",
+    "scanQRHeading2": "il QR",
+    "scanQRHeading3": "e prenota istantaneamente",
+    "step1": "Scansiona il QR.",
+    "step2": "Scarica la nostra app.",
+    "step3": "Goditi la nostra app sia per affari che per comodità personale.",
+    "scanQRButton": "Ottieni l'app",
+    "scanQRModalTitle": "Ottieni l'app Connect+",
+    "scanQRModalDescription1": "Scansiona il codice QR con la fotocamera del tuo telefono",
+    "scanQRModalDescription2": "per scaricare l'app Connect+"
+  },
+  "blogs-section": {
+    "blogsTitle1": "I nostri",
+    "blogsTitle2": "Blog",
+    "blogButton": "Leggi di più"
+  },
+  "footer": {
+    "footerText1": "Dove",
+    "footerText2": "comodità",
+    "footerText3": "sicurezza",
+    "footerText4": "e",
+    "footerText5": "trasparenza",
+    "footerText6": "si incontrano.",
+    "footerLinkHeading": "Informazioni legali",
+    "footerLink1": "Politica sulla privacy",
+    "footerLink2": "Termini e condizioni",
+    "footerLink3": "Politica sui cookie",
+    "footerLocation": "London, UK.",
+    "copyRight": "Copyright 2024 Tutti i diritti riservati"
+  },
+    "about-main": {
+    "aboutTitle1": "Chi siamo",
+    "aboutTitle2": "La nostra visione",
+    "aboutTitle3": "La nostra missione",
+    "aboutDescription1": "Connect+ è stata fondata con una visione chiara: creare una piattaforma di ride-hailing che dia priorità al controllo degli utenti, all'affidabilità e alla sostenibilità. Crediamo che tutti abbiano diritto a opzioni di trasporto comode e convenienti e ci impegniamo a realizzare questa visione attraverso le nostre funzionalità innovative e l'approccio centrato sull'utente.",
+    "aboutDescription2": "Benvenuti su Connect+, la piattaforma di ride-hailing innovativa che ridefinisce l'esperienza di trasporto. Su Connect+ ci dedichiamo a fornire una soluzione di viaggio senza soluzione di continuità, sicura ed efficiente sia per i passeggeri che per i conducenti. La nostra missione è rivoluzionare il modo in cui le persone si spostano, utilizzando tecnologie avanzate per offrire un livello di comodità e trasparenza senza pari nell'industria del ride-hailing."
+  },
+    "services-main": {
+    "servicesTitle1": "I nostri servizi",
+    "service1": "Noleggio auto",
+    "service2": "Corse",
+    "service3": "Car sharing",
+    "service4": "Biciclette",
+    "service1Description": "Prenota facilmente la tua auto online con il nostro sistema intuitivo. Esplora la nostra vasta gamma di auto a noleggio per trovare quella perfetta per il tuo viaggio. Che tu stia pianificando una fuga nel weekend, un viaggio d'affari o una vacanza in famiglia, abbiamo il veicolo giusto per soddisfare le tue esigenze.",
+    "service2Description": "Scopri un nuovo livello di comfort e convenienza con i nostri servizi di ride. Che tu stia andando al lavoro, all'aeroporto o per una serata fuori, le nostre corse affidabili ti assicurano di arrivare a destinazione in sicurezza e puntualmente.",
+    "service3Description": "I nostri servizi di car sharing offrono corse affidabili e convenienti per portarti dove devi andare. Con una flotta di veicoli ben mantenuti e autisti professionali, garantiamo un viaggio confortevole e sicuro ogni volta.",
+    "service4Description": "Vivi la libertà e il divertimento di esplorare la città su due ruote con i nostri servizi di noleggio biciclette. Che tu stia andando al lavoro, facendo commissioni o godendoti una tranquilla passeggiata, le nostre biciclette offrono un modo pratico ed ecologico per spostarsi.",
+    "serviceButton": "Prenota ora"
+  },
+    "contact": {
+    "contactTitle": "Contattaci",
+    "namePlaceholder": "Inserisci il tuo nome",
+    "emailPlaceholder": "Inserisci il tuo indirizzo email",
+    "messagePlaceholder": "Forza, stiamo ascoltando...",
+    "submitButton": "Invia"
+  }
+}
